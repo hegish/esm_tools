@@ -10,6 +10,10 @@ general:
             - "initialize_experiment_logfile"
             - "copy_tools_to_thisrun"
             - "compile_model"
+            - "pism_set_kv_pairs"
+            - "pism_set_flags"
+            - "pism_set_couplers"
+            - "pism_override_file"
             - "_copy_preliminary_files_from_experiment_to_thisrun"
             - "_show_simulation_info"
             - "create_new_files"
@@ -64,11 +68,8 @@ general:
                   - echam
                   - fesom
             ice_srun:
-                models: 
-                  - pism
-            couple_srun:
                 models:
-                  - scope
+                  - pism
 
 
 #########################################################################################
@@ -144,6 +145,7 @@ jsbach:
 
 
 fesom:
+        version: "2.0"
         choose_general.version:
                 1.1:
                         version: "1.4"
