@@ -152,7 +152,7 @@ oifs:
         # Note: If we don't use MPI/OMP we don't need full nodes for oifs.
         nproca: 36
         nprocb: 1
-        omp_num_proc: 2
+        omp_num_threads: 2
         choose_general.resolution:
                 TL159_CORE2:
                         nproca: 36
@@ -248,7 +248,7 @@ fesom:
         resolution: CORE2
         lresume: false
         nproc: 72
-        omp_num_proc: 1
+        omp_num_threads: 1
         choose_general.resolution:
                 TCO159_CORE2:
                         nproc: 144
@@ -370,7 +370,7 @@ rnfmap:
 
         nproca: 1
         nprocb: 1
-        omp_num_proc: 1
+        omp_num_threads: 1
         time_step: ${oasis3mct.coupling_time_step}
 
         coupling_fields:
