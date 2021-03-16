@@ -27,6 +27,7 @@ general:
             - "modify_namelists"
             - "modify_files"
             - "copy_files_to_work"
+            - "pism_assemble_command"
             - "write_simple_runscript"
             - "report_missing_files"
             - "database_entry"
@@ -62,14 +63,10 @@ general:
                         compute_time: "02:00:00"
                 T63_REF:
                         compute_time: "02:00:00"
-        multi_srun:
-            climate_srun:
-                models:
-                  - echam
-                  - fesom
-            ice_srun:
-                models:
-                  - pism
+
+        multi_cluster_job:
+            climate: awiesm-2.1
+            ice: pism-github1.2.1
 
 
 #########################################################################################

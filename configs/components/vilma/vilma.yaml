@@ -53,7 +53,7 @@ l_rot: ???
 # polynomial representation of PREM
 l_prem: 1
 
-# modified 3d viscosity 
+# modified 3d viscosity
 #       0: no
 #       1: read
 #       2: adjust
@@ -106,7 +106,7 @@ create_config:
                 - "<--append-- ${l_visc}"
                 - "<--append-- ${l_toro}"
                 - "<--append-- ${l_rot}"
-                - "<--append-- ${l_grid}" 
+                - "<--append-- ${l_grid}"
                 - "<--append-- ${l_envi}"
                 - "<--append-- ${itimes}"
                 - "<--append-- ${l_wepo}"
@@ -181,7 +181,7 @@ forcing_sources:
 forcing_targets:
         densi: inp/densi.inp
         visko: inp/visko.inp
-        
+
 bin_sources:
         exec: ${bin_dir}/${executable}
 

@@ -51,6 +51,7 @@ choose_version:
   snowflake1.0:
     branch: stable1.0-awi-dev
     git-repository: swrepo1.awi.de/scmrepos/git/snowflake/snowflake.git
+install_bins: bin/pismr
 clean_command: ${defaults.clean_command}
 comp_command: "mkdir -p build; cd build; export PISM_INSTALL_PREFIX=$(readlink -f\
   \ $(pwd)/..); cmake \\\n        -DCMAKE_VERBOSE_MAKEFILE:BOOL=ON \\\n        -DCMAKE_BUILD_TYPE=RelWithDebInfo\
