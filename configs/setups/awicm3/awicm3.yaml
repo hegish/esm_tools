@@ -51,6 +51,9 @@ general:
         choose_computer.name:
                 mistral:
                         pool_dir: "/work/ab0246/a270092/input"
+                        #add_environment_changes:
+                        #            useMPI: openmpi
+                        useMPI: openmpi
                 ollie:
                         pool_dir: "/work/ollie/jstreffi/input"
                 juwels:
@@ -612,8 +615,3 @@ computer:
         choose_general.taskset:
                 true:
                         launcher_flags: "-l --kill-on-bad-exit=1 --cpu_bind=cores"
-        # Choosing compiler and mpi in case it is not the default from the maschine.yaml
-        choose_computer.name:
-                mistral:
-                        useMPI: openmpi
-                        compiler_mpi: openmpi
