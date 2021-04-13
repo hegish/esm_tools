@@ -607,8 +607,13 @@ oasis3mct:
 
 
 #######################################################################################
-# Setting of launcher flags for srun
 computer:
+        # Setting of launcher flags for srun
         choose_general.taskset:
                 true:
                         launcher_flags: "-l --kill-on-bad-exit=1 --cpu_bind=cores"
+        # Choosing compiler and mpi in case it is not the default from the maschine.yaml
+        choose_computer.name:
+                mistral:
+                        useMPI: openmpi
+                        compiler_mpi: openmpi
